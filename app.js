@@ -26,5 +26,7 @@ app.get('/', (req, res) => {
 
 app.post('/', messageWebhook)
 
+console.log(process.env.DIALOGFLOW_PRIVATE_KEY);
+
 
 app.listen(port, () => console.log("Server started on port " + port));
