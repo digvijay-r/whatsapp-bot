@@ -13,12 +13,10 @@ const projectId = 'newagent-moqk'; //https://dialogflow.com/docs/agents#settings
 const sessionId = '123456';
 const languageCode = 'en-US';
 
-const key = '-----BEGIN PRIVATE KEY-----\n' + process.env.DIALOGFLOW_PRIVATE_KEY + '\n-----END PRIVATE KEY-----\n'
 
 const config = {
   credentials: {
-    // private_key: process.env.DIALOGFLOW_PRIVATE_KEY,
-    private_key: key,
+    private_key: process.env.DIALOGFLOW_PRIVATE_KEY,
     client_email: process.env.DIALOGFLOW_CLIENT_EMAIL
   }
 };
